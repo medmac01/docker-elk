@@ -73,6 +73,7 @@ services:
     volumes:
       - ./logstash/config/logstash.yml:/usr/share/logstash/config/logstash.yml:ro,Z
       - ./logstash/pipeline:/usr/share/logstash/pipeline:ro,Z
+      - /Users/medmachrouh/Desktop/PhD-OS/apt_gen/unraveled/host_logs/logs:/usr/share/logstash/logs
     ports:
       - 5044:5044
       - 50000:50000/tcp
